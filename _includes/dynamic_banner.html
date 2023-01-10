@@ -1,0 +1,8 @@
+{%- assign directory = include.directory | default: "" -%}
+{%- assign picture_num = include.picture_num | default: "1" -%}
+
+<script type="text/javascript">
+    //Get Banner image by random
+    var n = Math.floor(Math.random() * {{ picture_num }} + 1);
+    document.write('<div class="interactive-slider-v2" style="background-image:url(\'{{ site.baseurl }}/assets/img/{{ directory }}/{{ directory }}_' + n + '.jpg\')">');
+</script>

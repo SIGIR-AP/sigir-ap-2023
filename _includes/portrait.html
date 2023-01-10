@@ -1,0 +1,23 @@
+{%- if include.style == "small" -%}
+  {%- assign width = 100 -%}
+{%- else -%}
+  {%- assign width = 150 -%}
+{%- endif -%}
+{%- assign name = include.name | default: "" -%}
+{%- assign image = include.image | default: "" -%}
+{%- assign url = include.url | default: "" -%}
+{%- assign affiliation = include.affiliation | default: "" -%}
+
+<div class="portrait">
+    <figure class="portrait_image">
+      <a href="{{ url }}">
+        <img src="{{ image }}" alt="image">
+      </a>
+    </figure>
+    <span class="portrait_name">
+      {{ name }}
+    </span>
+    <span class="portrait_affiliation">
+      {{ affiliation }}
+    </span>
+</div>

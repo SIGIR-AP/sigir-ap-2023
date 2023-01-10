@@ -1,0 +1,64 @@
+---
+title: "blank"
+<!-- permalink: pretty -->
+---
+
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+
+<body class="header-fixed">
+    <div class="wrapper" style="min-height: 800px">
+        <!--=== Header===-->
+        <div class="header-v2 header-sticky">
+            <div class="container container-space"></div>
+            <!-- Navbar -->
+            {% include navbar.html %}
+            <!-- End Navbar -->
+        </div>
+        <!--=== End Header ===-->
+        {% include dynamic_banner.html directory="main-banners" picture_num="3" %}
+
+        <div class="container">
+            <h1 class="animated fadeInUp">Important Dates</h1>
+        </div>
+    </div>
+
+
+    <div class="bg-color-white">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-10">
+                <ul class="big-list narrow">
+                {% include important_date.html label="deadline" date="June 26, 2023" event="Abstract Submission" %}
+                {% include important_date.html label="deadline" date="July 3, 2023" event="Paper Submission" %}
+                {% include important_date.html label="notification" date="September 10, 2023" event="Paper Decision Notifications" %}
+              </ul></div>
+              <div class="col-md-1">
+              </div>
+            </div>
+    </div>
+</div>
+<!--=== End Content ===-->
+
+
+<!--=== Footer ===-->
+{% include footer.html %}
+<!--=== End Footer ===-->
+</div>
+
+<!--=== Scripts ===-->
+{% include scripts.html %}
+<!--=== End scripts ===-->
+
+</body>
+</html>
