@@ -49,7 +49,7 @@ exclude:
   - notebooks/*
 
 # url: sigir2020.github.io
-baseurl: /
+baseurl: /sigir-ap2023/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
