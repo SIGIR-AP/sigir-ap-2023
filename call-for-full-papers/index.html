@@ -12,59 +12,72 @@ title: "Call for Full Papers pages"
 <!--<![endif]-->
 
 <head>
-    <title>SIGIR 2020</title>
     {% include head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header-v3.css">
 </head>
 
 <body class="header-fixed">
     <div class="wrapper" style="min-height: 800px">
         <!--=== Header===-->
-        <div class="header-v3">
-            <div class="container"></div>
+        <div class="header-v2 header-sticky">
+            <div class="container container-space"></div>
             <!-- Navbar -->
             {% include navbar.html %}
             <!-- End Navbar -->
         </div>
         <!--=== End Header ===-->
-        <div class="breadcrumbs">
-            <div class="container">
-                <h1 class="pull-left">Call For Full Papers</h1>
-                <ul class="pull-right breadcrumb">
-                    <li><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li><a href="">Submit</a></li>
-                    <li class="active">Call For Full Papers</li>
-                </ul>
-            </div>
+        {% include dynamic_banner.html directory="main-banners" picture_num="3" %}
+
+        <div class="container">
+            <h1 class="animated fadeInUp">Call for Full Papers</h1>
         </div>
+    </div>
 
         <div class="bg-color-white">
             <div class="container content-xs">
                 <div class="news-v3 margin-bottom-30">
-                    {% include banner.html %}
                     <!-- Contents goes here -->
                     <div class="news-v3-in">
+                        <p>
+                            The annual SIGIR-AP conference is a major international forum for the presentation of new research results, and the demonstration of new systems and techniques, in the broad field of information retrieval (IR). The 1st ACM SIGIR-AP conference, to be held in Beijing, China, welcomes contributions related to any aspect of information retrieval and access, including theories and foundations, algorithms and applications, and evaluation and analysis. The conference and program chairs invite those working in areas related to IR to submit high-impact original papers for review.
+                        </p>
+                        
+                        <h1 class="margin-bottom-5" style="margin-bottom: 0">
+                            <strong>New for SIGIR-AP</strong>
+                        </h1>
+                        <br>
+                        <p>
+                            Compared to existing IR conferences, a novel feature of SIGIR-AP is that, although the review process is single-track (with a variable page limit – see below), SIGIR-AP has two paper types: <i>Regular</i> and <i>SIGIR-RR</i>:
+                        </p>
+                            <li>
+                                <strong>Regular Papers</strong> are research papers that haven't been published or submitted to any venue.
+                            </li>
+                            <li>
+                                <strong>SIGIR-RR Papers</strong> are revisions and resubmissions of papers that were not accepted at SIGIR 2023. 
+                            </li>
+                            <br>
+                            <p>
+                            Regular papers are general research papers like those submitted to SIGIR. Some of them could also be resource papers or reproducibility papers. 
+                            Similar to SIGIR, each regular paper will be reviewed by at least 3 Regular PC members.
+                            In contrast, SIGIR-RR papers are revised papers that were original rejected by SIGIR in the same year (e.g., SIGIR 2023).
+                            Authors are required to explain how they addressed the SIGIR reviewer comments to improve the paper. 
+                            For some of these papers, the SIGIR-AP PC chairs will have access to the original anonymised reviews from SIGIR 2023, provided by the SIGIR 2023 PC chairs. 
+                            The SIGIR-AP PC chairs will try to desk-reject SIGIR-RR submissions with clearly unsatisfactory explanation or revision. 
+                            Each SIGIR-RR paper will be reviewed by at least 2 Regular PC members. 
+                            During the online discussion, the Senior and Regular PC members will discuss how well the paper has been improved after SIGIR. 
+                            We believe that, at highly competitive conferences such as SIGIR, some of the rejected papers maybe just as good as the accepted ones.
+                            Therefore, with SIGIR-RR papers, SIGIR-AP aims to provide better review process through saving the reviewer efforts of SIGIR and avoiding potential negative bias caused by irresponsble reviews. 
+                            Also, please note that the anonymised SIGIR-AP 2023 reviews may be forwarded to the SIGIR 2024 PC chairs so that reviewer's efforts will be re-utilised if authors of rejected SIGIR-AP papers choose to resubmit to SIGIR.
 
-                        <h2 class="margin-bottom-5" style="margin-bottom: 0">
-                            <strong>Call for Full Papers for SIGIR 2020, Xi’an, China</strong>
-                        </h2>
+                        </p>
 
-                        <h5 class="margin-bottom-5"><strong>Important dates for full papers:</strong></h5>
+                        <h5 class="margin-bottom-5"><strong>Important dates for paper submission:</strong></h5>
                         <p>
                             Time zone: <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere On Earth (AOE)</a>
                             <br>
-                            Full paper abstracts due: <span class="text-danger">Wed, Jan 15, 2020</span><br>
-                            Full papers due: <span class="text-danger">Wed, Jan 22, 2020</span><br>
-                            Full paper notifications: <span class="text-danger">Wed, Apr 22, 2020</span><br>
+                            All paper abstracts due: <span class="text-danger">June 26, 2023</span><br>
+                            All papers due: <span class="text-danger">July 3, 2023</span><br>
+                            All paper notifications: <span class="text-danger">September 10, 2023</span><br>
                         </p>
-
-                        <p>The annual SIGIR conference is the major international forum for the presentation of new
-                            research results, and the demonstration of new systems and techniques, in the broad field of
-                            information retrieval (IR). The 43rd ACM SIGIR conference, to be held in Xi'an, China,
-                            welcomes contributions related to any aspect of information retrieval and access, including
-                            theories and foundations, algorithms and applications, and evaluation and analysis. The
-                            conference and program chairs invite those working in areas related to IR to submit
-                            high-impact original papers for review.</p>
 
                         <hr>
                         <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>Submission Guidelines</strong></h2>
@@ -73,16 +86,20 @@ title: "Call for Full Papers pages"
                             journal or conference.
                         </p>
                         <p>
-                            Submissions of full research papers must be in English, in PDF format, and be at most 9
-                            pages
-                            (including figures) + 1 pages of references in length, in the current ACM two-column
-                            conference format. Suitable LaTeX, Word, and
+                            Submissions of regular and SIGIR-RR papers must be in English, in PDF format, 
+                            be at least 2 pages and at most 9 pages (including figures) + 1 extra page for references in length, in the current ACM two-column
+                            conference format. 
+                            Each paper will be accessed according to whether the paper length is commensurate with contribution size. 
+                            That is, for example, if a paper contains a good scientific contribution that is worth 2 pages, 
+                            then that 2-page paper should be a candidate for acceptance; 
+                            if a 9-page paper does not contain enough substance, then the paper is considered weak. 
+                            Suitable LaTeX, Word, and
                             <a href="https://www.overleaf.com/gallery/tagged/acm-official">Overleaf</a>
                             templates are available from the
                             <a href="https://www.acm.org/publications/proceedings-template">ACM Website</a> (use
-                            the“sigconf”proceedings template). Full research papers must describe work that is not
+                            the“sigconf”proceedings template). Papers must describe work that is not
                             previously published, not accepted for publication elsewhere, and not currently under review
-                            elsewhere (including as a short-paper submission for SIGIR 2020). Submissions must be
+                            elsewhere. Submissions must be
                             anonymous and should be submitted electronically via the
                             <a class="tooltips" href="https://easychair.org/conferences/?conf=sigir2020">conference
                                 submission system</a>.
@@ -120,10 +137,10 @@ title: "Call for Full Papers pages"
                         <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>List of Topics</strong></h2>
                         <p class="margin-top-0">Relevant topics include, but are not limited to:</p>
                         <h3>
-                            <strong>Search and Ranking:</strong>Research on core IR algorithmic topics, including IR at
-                            scale, such as:
+                            <strong>Search and Ranking:</strong>
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research on core IR algorithmic topics, including IR at scale, such as:
+                        
                             <ul>
                                 <li>
                                     Queries and Query Analysis (e.g., query intent, query understanding, query
@@ -144,14 +161,14 @@ title: "Call for Full Papers pages"
                                 </li>
 
                             </ul>
-                        </blockquote>
+                        
 
                         <h3>
-                            <strong>Foundations and Future Directions:</strong>Research with theoretical or empirical
+                            <strong>Foundations and Future Directions:</strong>
+                        </h3>
+                        Research with theoretical or empirical
                             contributions on new technical or social aspects of IR, especially in more speculative
                             directions or with emerging technologies, such as:
-                        </h3>
-                        <blockquote class="hero margin-bottom-50">
                             <ul>
                                 <li>
                                     New Theory (e.g., theoretical models, concepts and foundations of information
@@ -174,14 +191,15 @@ title: "Call for Full Papers pages"
                                     ideas and insights, with actionable lessons for the near future).
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
 
                         <h3>
-                            <strong>Domain-Specific Applications:</strong>Research focusing on domain-specific IR
-                            challenges, such as:
+                            <strong>Domain-Specific Applications:</strong>
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research focusing on domain-specific IR
+                            challenges, such as:
+                        
                             <ul>
                                 <li>
                                     Local and Mobile Search (e.g., location-based search, mobile usage understanding,
@@ -220,14 +238,14 @@ title: "Call for Full Papers pages"
                                     applications of search technology for social good).
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
 
                         <h3>
-                            <strong> Content Recommendation, Analysis and Classification:</strong>Research focusing on
-                            recommender systems, rich content representations and content analysis, such as:
+                            <strong> Content Recommendation, Analysis and Classification:</strong>
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research focusing on
+                            recommender systems, rich content representations and content analysis, such as:
                             <ul>
                                 <li>
                                     Filtering and Recommending (e.g., content-based filtering, collaborative filtering,
@@ -245,14 +263,14 @@ title: "Call for Full Papers pages"
                                     extraction, query understanding, human-in-the-loop knowledge aquisition)
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
 
                         <h3>
-                            <strong> Artificial Intelligence, Semantics, and Dialog:</strong>Research bridging AI and
-                            IR, especially toward deep semantics and dialog with intelligent agents, such as:
+                            <strong> Artificial Intelligence, Semantics, and Dialog:</strong>
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research bridging AI and
+                            IR, especially toward deep semantics and dialog with intelligent agents, such as:
                             <ul>
                                 <li>
                                     Core AI (e.g. deep learning for IR, embeddings, intelligent personal assistants and
@@ -280,14 +298,14 @@ title: "Call for Full Papers pages"
                                     representativeness, discrimination and harmful bias).
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
 
                         <h3>
-                            <strong>Human factors and interfaces:</strong>Research into user-centric aspects of IR
-                            including user interfaces, behavior modeling, privacy, interactive systems, such as:
+                            <strong>Human factors and interfaces:</strong>
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research into user-centric aspects of IR
+                            including user interfaces, behavior modeling, privacy, interactive systems, such as:
                             <ul>
                                 <li>
                                     Mining and Modeling Users (e.g., user and task models, click models, log analysis,
@@ -309,13 +327,13 @@ title: "Call for Full Papers pages"
                                     security).
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
                         <h3>
-                            <strong>Evaluation:</strong> Research that focuses on the measurement and evaluation of IR
-                            systems, such as:
+                            <strong>Evaluation:</strong> 
                         </h3>
-                        <blockquote class="hero margin-bottom-50">
+                        Research that focuses on the measurement and evaluation of IR
+                            systems, such as:
                             <ul>
                                 <li>
                                     User-centered Evaluation (e.g., user experience and performance, user engagement and
@@ -341,7 +359,7 @@ title: "Call for Full Papers pages"
                                     Methodology (e.g., statistical methods and reproducibility issues in IR evaluation).
                                 </li>
                             </ul>
-                        </blockquote>
+                        
 
 
                         <hr>
@@ -357,7 +375,7 @@ title: "Call for Full Papers pages"
             </div>
         </div>
         <!--/end container-->
-    </div>
+    
     <!--=== End Content ===-->
 
 

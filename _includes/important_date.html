@@ -10,9 +10,14 @@
   {%- assign label_type = "label-info" -%}
   {%- assign label = "Notification" -%}
 {%- endif -%}
+{%- if label == "conference" -%}
+  {%- assign label_type = "label-success" -%}
+  {%- assign label = "Conference" -%}
+{%- endif -%}
+
 <li class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-7">
+    <div class="col-md-5">
         <h4 class="pull-left">
             {%- if label != "" -%}
             <span class="label {{ label_type }}">{{ label }}</span> &nbsp;
@@ -20,7 +25,7 @@
             {{ event }}
         </h4>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-5">
     <h4 class="pull-right">{{ date }}</h4>
     </div>
     <div class="col-md-1"></div>

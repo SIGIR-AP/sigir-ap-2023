@@ -1,6 +1,12 @@
 {%- assign account = include.account -%}
+{%- assign hashtag = include.hashtag -%}
 {%- assign height = include.height | default: "600px" -%}
 
 <div style="overflow-y: scroll;max-height: {{ height }};">
+{%- if account -%}
 <a class="twitter-timeline" href="https://twitter.com/{{ account }}?ref_src=twsrc%5Etfw">Tweets by {{ account }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{%- endif -%}
+{%- if hashtag -%}
+<a href="https://twitter.com/intent/tweet?button_hashtag={{ hashtag }}&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #{{ hashtag }}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{%- endif -%}
 </div>
