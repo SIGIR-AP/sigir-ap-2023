@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SIGIR 2020
+title: SIGIR-AP 2023
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-    43rd International ACM SIGIR Conference on Research and Development in Information Retrieval - July 25-30, 2020 (Xi'an, China)
+    1st International ACM SIGIR Conference on Information Retrieval in the Asia Pacific (Beijing, China)
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -39,7 +39,7 @@ defaults:
     scope:
       path: ""
     values:
-      conference_name: SIGIR 2020. July 25-30, 2020 (Xi'an, China)
+      conference_name: SIGIR-AP 2023. November 26-29, 2023 (Beijing, China)
 
 exclude:
   - Gemfile
@@ -48,8 +48,8 @@ exclude:
   - materials/*
   - notebooks/*
 
-# url: sigir2020.github.io
-baseurl: /sigir-ap2023/
+# url: sigir-ap.github.io
+baseurl: /SIGIR-AP-2023/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
