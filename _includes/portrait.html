@@ -11,7 +11,11 @@
 <div class="portrait">
     <figure class="portrait_image">
       <a href="{{ url }}">
-        <img src="{{ image }}" alt="image">
+        {%- if include.image -%}
+          <img src="{{ image }}" alt="image">
+        {%- else -%}
+          <img src="{{ site.baseurl }}/assets/img/organizers/{{ name }}.jpg" alt="image">
+        {%- endif -%}        
       </a>
     </figure>
     <span class="portrait_name">
